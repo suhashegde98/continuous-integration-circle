@@ -27,7 +27,7 @@ jobs:
       - checkout
 
       - run:
-          name: build dependencies
+          name: bundle exec htmlproofer ./_site --check-html
           command: bundle install
 
       - run:
